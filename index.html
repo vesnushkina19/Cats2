@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cats</title>
+    <title>Котики-обормотики</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,16 +13,64 @@
         <div class="btn upd">Изменить котика</div>
         <div class="btn del">Удалить котика</div>
     </div>
+
     <div class="burger">
         <span></span>
     </div>
-    <div class="main">
 
+    <div class="cards_container"></div>
 
-
-
-
+    <div class="popup-wrapper">
+        <div class="popup" data-type="card">
+            <div class="close">♡</div>
+            <div class="content">
+        </div>
+        <div class="popup" data-type="add">
+            <div class="close">♡</div>
+            <div class="content"></div>
+            <h2>Добавить котёнка</h2>
+            <form id="add">
+                <div class="row">
+                    <label for="i1">Имя котика</label>
+                    <input type="text" id="i1" name="name" required>
+                </div>
+                <div class="row">
+                    <label for="i2">Порядковый номер</label>
+                    <input type="text" id="i2" name="id" required min="1">
+                </div>
+                <div class="row">
+                    <label for="i3">Ссылка на картинку</label>
+                    <input type="text" id="i3" name="img_link">
+                </div>
+                <div class="row">
+                    <label for="i4">Возраст</label>
+                    <input type="text" id="i4" name="age" min="0" max="25">
+                </div>
+                <div class="row">
+                    <label for="i5">Рейтинг</label>
+                    <input type="text" id="i5" name="rate" min="0" max="10" value="10">
+                </div>
+                <div class="row">
+                    <label for="i6"><input type="text" id="i6" name="favourite">
+                        Любимчик
+                    </label>
+                </div>
+                <div class="row">
+                    <label for="i7">Описание</label>
+                    <textarea id="i7" name="description"></textarea>
+                    </div>
+                    <button type="submit">Добавить котика</button>
+            </form>
+        </div>
     </div>
+        <div class="popup" data-type="info">
+            <div class="close">♡</div>
+            <div class="content">
+                <h2>Внимание!</h2>
+            </div>
+        </div>
+    </div>
+
 
     <script src="script.js"></script>
     <script src="func.js"></script>
